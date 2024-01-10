@@ -1,2 +1,2 @@
 # KEC
-Krishna Engineering College
+Krishna Engineering College - College Website Clone
