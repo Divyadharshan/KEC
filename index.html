@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+<head>
+	<meta name="author" content="Hari Web-Tech Pre Ltd, divya.org">
+	<meta name="copyright"content="Krishna Engineering College">
+	<style>
+	.button {
+  border-radius: 3px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	
+	
+#feedback1 {
+    height: 35px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 63%;
+    z-index: 1000;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#feedback1 a {
+	display: block;
+	background:#DFFE00;
+	height: 42px;
+	width: 310px;	
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#feedback1 a:hover {
+	background:green;
+}
+
+#feedback {
+	display: block;
+	background:#ff9900;
+	height: 42px;
+	width: 300px;
+	position:fixed;
+	left: 0;
+	top: 90%;
+	z-index: 1000;
+	transform: rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+	#feedbackc {
+	display: block;
+	background:#ff9900;
+	height: 30px;
+	width: 230px;
+	position:fixed;
+	left: 40%;
+	top: 90%;
+	z-index: 1000;
+	transform: rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+	
+#feedbackt {
+	height: 30px;
+	width: 300px;
+	position: fixed;
+	right: 0;
+	top: 20%;
+	z-index: 1000;
+	transform: rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+	
+	
+#feedback a {
+	display: block;
+	height: 52px;
+	padding-top: 10px;
+	width: 300px;
+	text-align: center;
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#quickenquire input[type=text], input[type=email], textarea, select {
+	width: 100%;
+	padding: 5px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+#quickenquire label {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px!important;
+	margin: 0px!important;
+}
+#quickenquire  input[type=submit] {
+    width: 100%;
+    background-color: #00495d;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#quickenquire  input[type=submit]:hover {
+    background-color: #000000;
+}
+	.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  
+}
+	
+.project-details-popup .close {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  
+}
+.project-details-popup .prof-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;  
+  right: 0;
+  margin: auto;
+  top: -30px;
+}
+.project-details-popup .modal-header {
+  margin: 0;
+  padding: 0;
+}
+.project-details-popup .modal-header .header-img {
+  width: 100%;
+  max-width: 100%;
+}
+</style>
+<title>Krishna Engineering College(KEC), Chennai</title>
+	<link rel='stylesheet' id='demo-css'  href='https://www.svce.ac.in/wp-content/themes/svce/admin/includes/css/admin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-cv-public-style-css'  href='https://www.svce.ac.in/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.svce.ac.in/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://www.svce.ac.in/wp-includes/css/dist/block-library/theme.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.svce.ac.in/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wonderplugin-slider-css-css'  href='https://www.svce.ac.in/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginsliderengine.css' type='text/css' media='all' />
+<link rel='stylesheet' id='svce-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C400i%2C600%2C600i%2C800%2C800i' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/jquery-plugins/slick/slick.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/jquery-plugins/slick/slick-theme.css' type='text/css' media='all' />
+<link rel='stylesheet' id='breaking-news-ticker-css-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/jquery-plugins/breaking-news-ticker/breaking-news-ticker.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='material-icons-css'  href='https://fonts.googleapis.com/icon?family=Material+Icons&#038;ver=1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='svce-style-css'  href='https://www.svce.ac.in/wp-content/themes/svce/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='datatable_table-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/jquery-plugins/datatable/jquery.dataTables.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layout-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/css/layout.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/css/responsive.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='svce-colors-lightblue-css'  href='https://www.svce.ac.in/wp-content/themes/svce/assets/css/colors-lightblue.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.svce.ac.in/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>
+
+</script>
+<script type='text/javascript' src='https://www.svce.ac.in/wp-content/themes/svce/assets/js/jquery.min.js'></script>
+<script type='text/javascript' src='https://www.svce.ac.in/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginsliderskins.js'></script>
+<script type='text/javascript' src='https://www.svce.ac.in/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginslider.js'></script>
+<script type='text/javascript'>
+</script>
+<script type='text/javascript' src='https://www.svce.ac.in/wp-content/plugins/wp-statistics/assets/js/front.min.js'></script>
+<link rel='https://api.w.org/' href='https://www.svce.ac.in/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.svce.ac.in/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.svce.ac.in/wp-includes/wlwmanifest.xml"/> 
+<link rel='shortlink' href='https://www.svce.ac.in/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.svce.ac.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.svce.ac.in%2F"/>
+
+		<style type="text/css" id="custom-theme-default">
+			:root{
+				--Customcolor: 216, 56%, 39%;
+			}
+		</style>
+	<link rel="shortcut icon" href="./logo.jpg">
+	<style type="text/css" id="wp-custom-css">
+
+#feedback {
+
+	right: 44px;}
+
+.page-id-152 .banner-with-image,
+.page-id-406 .banner-with-image{
+	display:none;
+}
+
+.admission-slider,
+.academics-slider,
+.academics-slider-m{display:none;}
+
+.page-id-152 .admission-slider,.page-id-406 .academics-slider{display:block;}
+
+.footer-title{
+		font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    padding-left: 24px;
+}
+
+.location-title{
+	font-size: 16px;
+	margin-top: 18px;
+	margin-bottom: 0px;
+}
+
+.fs-17{
+	font-size: 17px;
+}
+
+.trust-ofc{
+	padding-top: 18px;
+}
+
+.header-bottom .row{align-items:center;}
+header .logo {
+	width: 337px;
+	margin: 0;}
+
+#scroll-top{right:unset;left:40px;}
+#mob-slider{
+	display:none;
+}
+#btn-test{
+	display: none;
+}
+
+.page-id-9065 #btn-test{
+	display: block;
+}
+
+#btn-test .header-advance-enquiry:before{
+	content: unset;
+}
+
+.testin-btn{
+position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    background: #f90;
+    padding: 8px 0px;
+}
+
+.testin-btn span{
+		font-size: 16px;
+    text-transform: uppercase;
+}
+
+.page-id-129 tr:nth-child(even){background-color: #f2f2f2;}
+
+.owl-next.disabled,
+.owl-prev.disabled{
+	display: none;
+}
+
+.h-cta{
+	display: flex;
+	align-items: center;
+	margin-top: 80px;
+	text-align: left;
+}
+
+.pl-graph p{
+	text-align: left;
+	padding-top: 30px;
+}
+
+.pl-report h3{
+	 font-weight: 600;
+}
+
+.pl-report div.row:nth-child(3){
+	margin-top: 60px;
+}
+
+.pl-report div.row:nth-child(3) h3{
+	margin-bottom: 40px;
+}
+.pl-graph h2{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.pl-graph h1{
+	font-weight: 500;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+
+.pl-graph .col-md-12:nth-child(2){
+	margin-top: 25px;
+}
+		</style>
+			
+</head>
+
+<body class="home page-template-default page page-id-119 wp-custom-logo wp-embed-responsive svce-front-page page-two-column colors-lightblue">
+	
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>	
+		<div id="page" class="page-wrapper">
+		<header id="masthead" class="site-header">
+			<div class="desktop-header">
+				<div class="header-top bg-lightblue text-white">
+					<div class="pr-5" >
+						<div class="row">
+																													
+							<div class="col-12 college-code">
+							
+									<ul class="d-flex justify-content-end">
+<li class="bg-green d-flex"><a href="#" class="py-10 align-self-center px-5">NBA</a></li>										
+										<li class="bg-orange d-flex"><a href="#" class="py-10 align-self-center px-5">NAAC &nbsp;&nbsp;<span style="background-color: green; color: #f1f1f1; font-weight: bold">A +</span>&nbsp;&nbsp; Accredited </a></li>
+<li class="bg-green d-flex"><a href="#" class="py-10 align-self-center px-5">NIRF</a></li>
+
+<li class="bg-orange d-flex"><a href="#" class="py-10 align-self-center px-5">Fees Payment Portal</a></li>
+									
+<li class="px-15 py-10 fw-600">Counseling Code - <span class="f-medium lh-16">2412</span></li>
+<li class="bg-orange d-flex"><a href="#" class="py-10 align-self-center px-5">Staff / Student Portal</a></li>										
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom pt-2">
+					<div class="container-fluid">
+						<div class="row m-0">
+							<div class="col-md-2">
+	<div class="row d-flex align-items-center flex-wrap h-100">
+				
+		<a class="logo mr-2" href="">
+			<img src="./logo.jpg" alt="Krishna Engineering College" width="300" height="150">
+		</a>
+	</div>
+</div>
+													
+<div class="col-md-8">
+	<div class="row">
+	<div id="navbarPageContent" class="h-100 d-flex w-100 justify-content-end"><ul id="menu-page-menu" class="d-flex py-4 align-items-center flex-wrap position-relative"><li id="menu-item-3806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-119 current_page_item menu-item-3806"><a href="" aria-current="page">Home</a></li>
+<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3744"><a href="#">Admissions</a>
+<ul class="sub-menu">
+	<li id="menu-item-9195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9195"><a href="#">Programs Offered</a></li>
+	<li id="menu-item-9191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9191"><a href="#">B.E/B.Tech. Admissions</a></li>
+	<li id="menu-item-9190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9190"><a href="#">B.E./B.Tech. Lateral Entry Admissions</a></li>
+	<li id="menu-item-9192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9192"><a href="#">B.E/B.Tech. NRI Admissions</a></li>
+	<li id="menu-item-9193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9193"><a href="#">M.E./ M.Tech Admissions</a></li>
+	<li id="menu-item-9196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9196"><a href="#">Research Programs</a></li>
+</ul>
+</li>
+<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-134"><a href="#">Academics</a>
+<ul class="sub-menu">
+	<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628"><a href="#">Departments</a></li>
+	<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="#">Time Table</a></li>
+	<li id="menu-item-3745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3745"><a href="#">Office of the CoE</a></li>
+</ul>
+</li>
+<li id="menu-item-3864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3864"><a href="#">Campus life</a>
+<ul class="sub-menu">
+	<li id="menu-item-3765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3765"><a href="#">Student Zone</a></li>
+	<li id="menu-item-3766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3766"><a href="#">Facilities</a></li>
+</ul>
+</li>
+<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-139"><a href="#">Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-14619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14619"><a href="#">Research Policy</a></li>
+	<li id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651"><a href="#">Office of the Dean Research</a></li>
+	<li id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="#">Research Funding</a></li>
+	<li id="menu-item-653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-653"><a href="#">Research Area</a></li>
+	<li id="menu-item-654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="#">Patents</a></li>
+	<li id="menu-item-774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-774"><a href="#">Faculty Research</a></li>
+	<li id="menu-item-776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="#">Student Research</a></li>
+	<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4102"><a href="#">KEC IPR TT Policy</a></li>
+</ul>
+</li>
+<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-138"><a href="#">Placement</a>
+<ul class="sub-menu">
+	<li id="menu-item-9321" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9321"><a href="#">Office of Training &#038; Placement</a></li>
+	<li id="menu-item-9311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9311"><a href="#">Training</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9319"><a href="#">Placement</a></li>
+		<li id="menu-item-9320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9320"><a href="#">Higher Studies</a></li>
+		<li id="menu-item-9324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9324"><a href="#">Internship</a></li>
+	</ul>
+	<ul class="sub-menu">
+		<li id="menu-item-9326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9326"><a href="#">Recruiters</a></li>
+	</ul>
+</li>
+	<li id="menu-item-9315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9315"><a href="#">Gallery</a></li>
+	<li id="menu-item-9316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9316"><a href="#">Preparation for Placement</a></li>
+	<li id="menu-item-9317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9317"><a href="#">Circulars</a></li>
+	<li id="menu-item-9318" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9318"><a href="#">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-3746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3746"><a target="" rel="noopener noreferrer" href="#">Alumni</a></li>
+<li id="menu-item-3748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3748"><a href="#">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-3761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3761"><a href="#">Administration</a></li>
+</ul>
+</li>
+<li id="menu-item-3747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3747"><a href="#">News &#038; Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-3807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3807"><a href="">College Circular</a></li>
+	<li id="menu-item-3770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3770"><a href="">KEC in Media</a></li>
+	<li id="menu-item-3772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3772"><a href="">Kurukshetra 2024</a></li>
+</ul>
+</li>
+<li id="menu-item-3749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3749"><a href="">Get in Touch</a></li>
+<li class="search"><a class="search_icon cursor-pointer d-flex align-items-center px-2"><i class="material-icons">search</i></a><div class="wpsearchform py-4">
+
+<form role="search" method="get" class="search-form d-flex align-items-center position-relative pt-4" action="">
+	<label for="search-form-1" class="pb-2 search_form">
+		Search for:	</label>
+	<input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	<span class="search-close"></span>
+	<button type="submit" class="search-submit">Search</button>
+</form>
+</div></li></ul></div>	</div>
+</div>
+
+<div class="col-md-2">
+	
+<div class="banner-button header-advance-enquiry" style="    position: relative;background: #f90;z-index: 9;width: 148px;height: 38px;float: left;top: 0;right: unset;left: 0;margin-top: 0;">
+		<span data-toggle="modal" data-target="#getSupport" class="btn border-radius-4 text-white border-radius-4 px-3 py-1 fs-14">Admission Enquiry</span>
+	</div>
+</div>													</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-header">
+				<div class="header-block d-flex align-items-center">
+					<a href="#" class="header-image col-6 col-md-4 d-flex align-items-center">
+												<img src="./logo.jpg" alt="Krishna Engineering College" />						
+					</a>
+					<ul class="icon-menu col-6 col-md-8 d-flex justify-content-end">
+						<li class="icon-mobile-open cursor-pointer">
+							<i class="material-icons">menu</i>
+						</li>
+					</ul>
+				</div>
+				<div class="mobile-menu">
+					<div class="icon-mobile-close cursor-pointer d-table">
+						<i class="material-icons">close</i>
+					</div>
+					<div class="responsive-logo align-center">
+						<img src="./logo.jpg" alt="Krishna Engineering College" />
+					</div>
+					
+					<div id="navbarMobileContent" class="menu-page-menu-container"><ul id="menu-page-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-119 current_page_item menu-item-3806"><a href="#" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3744"><a href="#">Admissions</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9195"><a href="#">Programs Offered</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9191"><a href="#">B.E/B.Tech. Admissions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9190"><a href="#">B.E./B.Tech. Lateral Entry Admissions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9192"><a href="#">B.E/B.Tech. NRI Admissions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9193"><a href="#">M.E./ M.Tech Admissions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9196"><a href="#">Research Programs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-134"><a href="#">Academics</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628"><a href="#">Departments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="#">Time Table</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3745"><a href="#">Office of the CoE</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3864"><a href="#">Campus life</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3765"><a href="#">Student Zone</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3766"><a href="#">Facilities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-139"><a href="#">Research</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14619"><a href="#">Research Policy</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651"><a href="#">Office of the Dean Research</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="#">Research Funding</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-653"><a href="#">Research Area</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="#">Patents</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-774"><a href="#">Faculty Research</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="#">Student Research</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4102"><a href="#">KEC IPR TT Policy</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-138"><a href="#">Placement</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9321"><a href="#">Office of Training &#038; Placement</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9311"><a href="#">Training</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9319"><a href="#">Placement</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9320"><a href="#">Higher Studies</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9324"><a href="#">Internship</a></li>
+	</ul>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9326"><a href="#">Recruiters</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9315"><a href="#">Gallery</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9316"><a href="#">Preparation for Placement</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9317"><a href="#">Circulars</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9318"><a href="#">Contact</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3746"><a target="_blank" rel="noopener noreferrer" href="#">Alumni</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3748"><a href="#">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3761"><a href="#">Administration</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3747"><a href="#">News &#038; Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3807"><a href="#">College Circular</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3770"><a href="#">KEC in Media</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3771"><a href="#">Kurukshetra 2024</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3749"><a href="#">Get in Touch</a></li>
+<li class="search"><a class="search_icon cursor-pointer d-flex align-items-center px-2"><i class="material-icons">search</i></a><div class="wpsearchform py-4">
+
+<form role="search" method="get" class="search-form d-flex align-items-center position-relative pt-4" action="#">
+	<label for="search-form-2" class="pb-2 search_form">
+		Search for:	</label>
+	<input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	<span class="search-close"></span>
+	<button type="submit" class="search-submit">Search</button>
+</form>
+</div></li> </ul></div>				</div>
+				
+		
+<div class="bg-lightblue text-white mt-3" style="border-bottom:4px solid #fff;">
+					<div class="pr-0" >
+						<div class="row">
+							<div class="col-12 college-code">
+								<ul class="d-flex justify-content-end">
+									<li class="bg-green d-flex"><a href="#" class="py-10 align-self-center px-5">NBA</a></li>
+									<li class="bg-orange d-flex"><a href="#" class="py-10 align-self-center px-5">NAAC</a></li>
+									<li class="bg-green d-flex"><a href="#" class="py-10 align-self-center px-5" style="padding: 0 20px !important">NIRF</a></li>
+<li class="bg-orange d-flex"><a target="_blank" href="#" class="py-10 align-self-center px-5" style="padding: 0 10px !IMPORTANT;">Fees Payment Portal</a></li>
+									<li class="px-15 py-10 fw-600 "style="padding: 10px 6px;font-size: 12.5px;">Counseling Code - 2412</li>
+									<li class="bg-orange d-flex"><a target="_blank" href="#" class="py-10 align-self-center px-5" style="    padding: 0 10px !IMPORTANT;">Staff / Student Portal</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="site-page-container bg-lightgray">
+			<div id="feedback">
+			<a href="" target="_blank">Admissions 2024 -  Apply Now</a>
+			</div>
+<style>
+
+.navigation-box{
+    top: .4rem;
+    right: .8rem;
+    width: 2rem;
+    position: absolute;
+}
+@media(min-width:768px){
+    .breaking-caret:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 15px solid #007bff;
+        border-bottom: 20px solid transparent;
+        position: absolute;
+        right: -15px;
+        top: 0;
+    }
+}
+</style>
+<br><br>
+
+<div id="amazingslider_customtexteffect_1" style="display:none;">{"Bottom bar":{"textstyle":"static","textpositionstatic":"bottom","textautohide":false,"textpositionmarginstatic":0,"textpositiondynamic":"bottomleft","textpositionmarginleft":24,"textpositionmarginright":24,"textpositionmargintop":24,"textpositionmarginbottom":24,"texteffect":"slide","texteffecteasing":"easeOutCubic","texteffectduration":600,"texteffectslidedirection":"left","texteffectslidedistance":30,"texteffectdelay":500,"texteffectseparate":false,"texteffect1":"slide","texteffectslidedirection1":"right","texteffectslidedistance1":120,"texteffecteasing1":"easeOutCubic","texteffectduration1":600,"texteffectdelay1":1000,"texteffect2":"slide","texteffectslidedirection2":"right","texteffectslidedistance2":120,"texteffecteasing2":"easeOutCubic","texteffectduration2":600,"texteffectdelay2":1500,"textcss":"display:block; padding:25px 30px 25px 30px; text-align:left;position:absolute;bottom:0;right:0;\nwidth:50%;","textbgcss":"display:block; position:absolute; top:0px; left:0px; width:100%; height:50%; background-color:rgba(43, 87, 154, 0.75); opacity:1; filter:alpha(opacity=60);","titlecss":"display:block; position:relative;font-family: \"Lato\", sans-serif;font-size:36px; color:#fff;","descriptioncss":"display:block; position:relative; font:12px \"Lucida Sans Unicode\",\"Lucida Grande\",sans-serif,Arial; color:#fff; margin-top:8px;","buttoncss":"display:block; position:relative; margin-top:8px;","texteffectresponsive":true,"texteffectresponsivesize":640,"titlecssresponsive":"font-size:18px;","descriptioncssresponsive":"font-size:36px;","buttoncssresponsive":"","addgooglefonts":false,"googlefonts":"","textleftrightpercentforstatic":40}}</div>
+<div class="wonderpluginslider-container" id="wonderpluginslider-container-1" style="max-width:100%;margin:0 auto;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+	<div class="wonderpluginslider" id="wonderpluginslider-1" data-sliderid="1" data-width="1360" data-height="500" data-skin="classic" data-playmutedandinlinewhenautoplay="false" data-addextraattributes="false" data-autoplay="true" data-randomplay="false" data-loadimageondemand="false" data-transitiononfirstslide="true" data-autoplayvideo="false" data-isresponsive="true" data-fullwidth="true" data-isfullscreen="false" data-ratioresponsive="true" data-showtext="true" data-showtimer="true" data-showbottomshadow="false" data-navshowpreview="true" data-textautohide="false" data-pauseonmouseover="false" data-lightboxresponsive="true" data-lightboxshownavigation="false" data-lightboxshowtitle="true" data-lightboxshowdescription="false" data-texteffectresponsive="true" data-donotinit="false" data-addinitscript="false" data-lightboxfullscreenmode="false" data-lightboxcloseonoverlay="true" data-lightboxvideohidecontrols="false" data-lightboxnogroup="false" data-shownav="false" data-navthumbresponsive="false" data-navshowfeaturedarrow="false" data-lightboxshowsocial="false" data-lightboxshowfacebook="true" data-lightboxshowtwitter="true" data-lightboxshowpinterest="true" data-lightboxsocialrotateeffect="true" data-showsocial="false" data-showfacebook="true" data-showtwitter="true" data-showpinterest="true" data-socialrotateeffect="true" data-disableinlinecss="false" data-triggerresize="false" data-lightboxautoslide="false" data-lightboxshowtimer="true" data-lightboxshowplaybutton="true" data-lightboxalwaysshownavarrows="false" data-lightboxshowtitleprefix="true" data-titleusealt="false" data-outputtext="false" data-titletag="h1" data-descriptiontag="h2" data-scalemode="flexheight" data-arrowstyle="always" data-transition="fade" data-loop="5" data-border="0" data-slideinterval="2000" data-arrowimage="https://www.svce.ac.in/wp-content/uploads/2020/03/hjkiu.png" data-arrowwidth="72" data-arrowheight="72" data-arrowtop="50" data-arrowmargin="8" data-navstyle="bullets" data-navimage="" data-navwidth="24" data-navheight="24" data-navspacing="8" data-navmarginx="16" data-navmarginy="16" data-navposition="bottom" data-navthumbnavigationstyle="arrow" data-navthumbnavigationarrowimage="carouselarrows-32-32-0.png" data-navthumbnavigationarrowimagewidth="32" data-navthumbnavigationarrowimageheight="32" data-playvideoimage="playvideo-64-64-0.png" data-playvideoimagewidth="64" data-playvideoimageheight="64" data-lightboxthumbwidth="90" data-lightboxthumbheight="60" data-lightboxthumbtopmargin="12" data-lightboxthumbbottommargin="4" data-lightboxbarheight="64" data-lightboxtitlebottomcss="color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;" data-lightboxdescriptionbottomcss="color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;" data-textformat="Bottom bar" data-textpositionstatic="bottom" data-textpositiondynamic="bottomleft" data-paddingleft="0" data-paddingright="0" data-paddingtop="0" data-paddingbottom="0" data-texteffectresponsivesize="640" data-textleftrightpercentforstatic="40" data-fadeduration="2500" data-crossfadeduration="1000" data-fadeoutfadeinduration="2000" data-slideduration="1000" data-cssslideduration="2000" data-elasticduration="1000" data-sliceduration="3000" data-blindsduration="1500" data-blocksduration="2500" data-shuffleduration="2500" data-tilesduration="3000" data-kenburnsduration="6500" data-flipduration="1500" data-flipwithzoomduration="2000" data-threedduration="1500" data-threedhorizontalduration="1500" data-threedwithzoomduration="2500" data-threedhorizontalwithzoomduration="2200" data-threedflipduration="1500" data-threedflipwithzoomduration="2000" data-threedtilesduration="2000" data-threedfallback="flip" data-threedhorizontalfallback="flip" data-threedwithzoomfallback="flipwithzoom" data-threedhorizontalwithzoomfallback="flipwithzoom" data-threedflipfallback="flip" data-threedflipwithzoomfallback="flipwithzoom" data-threedtilesfallback="tiles" data-ratiomediumscreen="800" data-ratiomediumheight="1.6" data-ratiosmallscreen="480" data-ratiosmallheight="1.5" data-socialmode="mouseover" data-socialposition="position:absolute;top:8px;right:8px;" data-socialpositionsmallscreen="position:absolute;top:8px;right:8px;" data-socialdirection="horizontal" data-socialbuttonsize="32" data-socialbuttonfontsize="18" data-navthumbcolumn="5" data-navthumbtitleheight="20" data-navthumbtitlewidth="120" data-navthumbresponsivemode="samesize" data-navthumbstyle="imageonly" data-navthumbmediumsize="900" data-navthumbmediumwidth="64" data-navthumbmediumheight="64" data-navthumbmediumcolumn="4" data-navthumbmediumtitleheight="18" data-navthumbmediumtitlewidth="120" data-navthumbsmallsize="600" data-navthumbsmallwidth="48" data-navthumbsmallheight="48" data-navthumbsmallcolumn="3" data-navthumbsmalltitleheight="18" data-navthumbsmalltitlewidth="120" data-lightboxsocialposition="position:absolute;top:100%;right:0;" data-lightboxsocialpositionsmallscreen="position:absolute;top:100%;right:0;left:0;" data-lightboxsocialdirection="horizontal" data-lightboxsocialbuttonsize="32" data-lightboxsocialbuttonfontsize="18" data-lightboxtitlestyle="bottom" data-lightboximagepercentage="75" data-lightboxdefaultvideovolume="1" data-lightboxoverlaybgcolor="#000" data-lightboxoverlayopacity="0.9" data-lightboxbgcolor="#fff" data-lightboxtitleprefix="%NUM / %TOTAL" data-lightboxtitleinsidecss="color:#fff; font-size:16px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;" data-lightboxdescriptioninsidecss="color:#fff; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;" data-triggerresizedelay="100" data-lightboxslideinterval="5000" data-lightboxtimerposition="bottom" data-lightboxtimercolor="#dc572e" data-lightboxtimeropacity="1" data-lightboxbordersize="8" data-lightboxborderradius="0" data-textcss="display:block; padding:25px 30px 25px 30px; text-align:left;position:absolute;bottom:0;right:0;
+width:50%;" data-textbgcss="display:block; position:absolute; top:0px; left:0px; width:100%; height:50%; background-color:rgba(43, 87, 154, 0.75); opacity:1; filter:alpha(opacity=60);" data-titlecss="display:block; position:relative;font-family: &quot;Lato&quot;, sans-serif;font-size:36px; color:#fff;" data-descriptioncss="display:block; position:relative; font:12px &quot;Lucida Sans Unicode&quot;,&quot;Lucida Grande&quot;,sans-serif,Arial; color:#fff; margin-top:8px;" data-buttoncss="display:block; position:relative; margin-top:8px;" data-titlecssresponsive="font-size:18px;" data-descriptioncssresponsive="font-size:36px;" data-buttoncssresponsive="" data-jsfolder="" style="display:none;" ><ul class="amazingslider-slides"  style="display:none;"><li><a href="">
+
+	<li><img class="amazingslider-thumbnail-elem amazingsliderthumbnailimg" src="./logo1.jpg" alt="" title="" data-description=""/></li>
+	<li><img class="amazingslider-thumbnail-elem amazingsliderthumbnailimg" src="./clg1.jpg" alt="" title="" data-description=""/></li>
+	<li><img class="amazingslider-thumbnail-elem amazingsliderthumbnailimg" src="./top.jpg" alt="" title="" data-description=""/></li>
+	<li><img class="amazingslider-thumbnail-elem amazingsliderthumbnailimg" src="./core.jpg" alt="" title="" data-description=""/></li>
+	<li><img class="amazingslider-thumbnail-elem amazingsliderthumbnailimg" src="./degree.png" alt="" title="" data-description=""/></li>
+	<li><img class="amazingslider-thumbnail-elem amazingsliderthumbnailimg" src="alu.jpg" alt="" title="" data-description=""/></li>
+	</div></div>
+<hr/>
+<div class="section pb-xs-0 about p-0">
+    <div class="bg-block py-5 bg-image-cover position-relative"
+        style="background-image: url('./logo.jpg');">
+        <div id="particles-js"></div>
+<div class="text-center w-100 px-15 py-4 text-white">
+    <span class="title-h1 text-white entry-title center">Courses Offered</span>
+</div>
+        <div class="text-center text-white py-5 px-15">
+            <div class="col-md-12 aboutus about_text_static pt-0 pt-md-0">
+                <div class="row text-white d-flex justify-content-center flex-wrap">
+                    <div class=" col-12 col-sm-4 col-md-4 col-lg-3 text-center p-4 my-2">
+                        <div class="d-flex w-100 h-100  align-items-center  justify-content-center title-h2"> UG
+                            Programs</div>
+                    </div>
+                    <div class=" col-12 col-sm-4 col-md-4 col-lg-3 text-center p-4 my-2">
+                        <div class="d-flex w-100  h-100 align-items-center  justify-content-center  title-h2">PG
+                            Programs</div>
+                    </div>
+                    <div class=" col-12 col-sm-4 col-md-4 col-lg-3 text-center p-4 my-2">
+                        <div class="d-flex w-100 h-100 align-items-center  justify-content-center  title-h2">Research Programs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<div class="text-center w-100 px-15 py-4 text-white">
+    <span class="title-h1 text-black entry-title center">Statistics</span>
+</div>
+<div class="section pb-xs-0 about-us p-0">
+    <div class="bg-block py-5 bg-image-cover position-relative bg-fixed"
+        style="background-image: url('./clg.jpg');">
+        <div class="container py-3">
+            <div class="row">
+                <div class="text-center w-100 px-15 text-white">
+                    <h4 class="pt-2 fw-600">" Unleash Your Brilliance, Engineer Your Success : Join the Future at Krishna Engineering College! "</h4>
+                </div>
+                <div class="col-md-12 aboutus pt-5 pt-md-5">
+                    <div class="row text-white d-flex justify-content-center flex-wrap">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                No. of Years                            </div>
+                            <div class="d-flex w-100 align-items-center justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>10</span>
+                            </div>
+                        </div>
+                        <div class=" col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center  title-h3 pt-2">
+                                Programs                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>19</span>
+                            </div>
+                        </div>
+                        <div class=" col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center  title-h3 pt-2">
+                                Students                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>4013</span>
+                            </div>
+                        </div>
+                        <div class=" col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                Placements                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300 percentage-sym'>95.58</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2"
+                            style="border-right: 1px solid #fff;">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                Alumni                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>10000+</span>
+                            </div>
+                        </div>
+                        <div class=" col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2"
+                            style="border-right: 1px solid #fff;">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                Funded Projects (Live)                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>52</span>
+                            </div>
+                        </div>
+                        <div class=" col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                Research Centers                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>24</span>
+                            </div>
+                        </div>
+						
+						<div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2"
+                            style="border-left: 1px solid #fff;">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                PhD Received                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>25</span>
+                            </div>
+                        </div>
+						
+						<div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center p-4 my-2"
+                            style="border-left: 1px solid #fff; border-right: 1px solid #fff;">
+                            <div class="d-flex w-100 fw-600 align-items-center  justify-content-center title-h3 pt-2">
+                                Patents Granted                            </div>
+                            <div class="d-flex w-100  align-items-center  justify-content-center">
+                                <span class='numscroller fs-48 fw-300'>16</span>
+                            </div>
+                        </div>			
+                    </div>
+					<div class="text-center pt-3 pt-md-5 d-flex align-items-center justify-content-center">
+                        <a href="https://www.svce.ac.in/about-us/"
+                            class="btn bg-white text-uppercase text-black border-radius-4 px-4 py-2 fw-600">More about KEC</a>
+                    </div>		
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .slick-slider div {
+        padding: 10px;
+    }
+    .slick-slider div img {
+        width: 100%;
+        height: auto;
+    }
+    .accreditation-block-view.abc .accreditation-image {
+        height: 260px; 
+        overflow: hidden;
+    }
+
+    .acslider div img {
+        width: auto;
+        height: 90px !important;
+    }
+	
+	
+.acslider .slick-track
+{
+    display: flex !important;
+}
+
+.acslider .slick-slide
+{
+    height: inherit !important;
+}	
+</style>
+
+<div class="text-center w-100 px-15 py-4">
+    <span class="title-h1 text-black entry-title center">Top Recruiters</span>
+</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <style type="text/css">
+        .owl-prev {
+            position: absolute;
+            left: 0;
+            font-size: 51px !important;
+            top: 37%;
+        }
+
+        .owl-next {
+            position: absolute;
+            right: 0;
+            font-size: 51px !important;
+            top: 37%;
+        }
+
+        @media only screen and (max-width: 767px) {
+              .owl-prev {
+                position: absolute;
+                left: 0;
+                font-size: 51px !important;
+                top: 16%;
+            }
+
+            .owl-next {
+                position: absolute;
+                right: 0;
+                font-size: 51px !important;
+                top: 16%;
+            }
+        }
+
+    </style>
+
+    <div class="section" id="placement-logos">
+        <div class="container-fluid pl-5 pr-5 pb-4 pb-md-5">
+            <div class="row">
+
+                    <div class="col-md-12 pb-4 pb-md-0 xs-text-center owl-carousel">
+						<img class="item" src="https://techcrunch.com/wp-content/uploads/2021/07/GettyImages-1207206237.jpg" width="1200" height="600">
+
+                        <img class="item" src="https://techcrunch.com/wp-content/uploads/2022/05/GettyImages-1354846583.jpeg" width="1200" height="600">
+                        
+						<img class="item" src="https://etimg.etb2bimg.com/thumb/msid-103374092,width-1200,resizemode-4/.jpg" width="1200" height="600">
+						<img class="item" src="https://streamsets.b-cdn.net/wp-content/uploads/IBM_Depositphotos_368004026_s-2019.jpg" width="1200" height="600">
+						<img class="item" src="https://images.moneycontrol.com/static-mcnews/2021/11/HCL-Tech.jpg" width="1200" height="600">
+						<img class="item" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202310/wipro_0-sixteen_nine.jpg" width="1200" height="600">
+						<img class="item" src="https://www.zohowebstatic.com/sites/zweb/images/ogimage/zoho-logo.png" width="1200" height="600">
+						
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            responsiveClass: true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:false
+                },
+                1000:{
+                    items:2,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+
+    </script>
+<div class="section pt-0">
+    <div class="container pb-3">
+        <div class="row">
+            <div class="text-center w-100 pb-4">
+                <span class="title-h1 text-lightblue">Clubs & Activities</span>
+            </div>
+            <div class="col-md-12">
+                <div class="home-club d-flex justify-content-center flex-wrap">
+                    			<div class="col-md-3 my-3">
+			<div class="element-tilt position-relative h-100">
+				<a href="#" class="club-block-view d-block p-3 box-shadow h-100">
+					<div class="accreditation-image justify-content-center d-flex pb-3">
+						<img src="https://www.svce.ac.in/wp-content/uploads/2019/09/red_ribbonclub_svce-1.png" alt="Image Source" />
+					</div>
+					<div class="club-content text-center">
+						<span class="club-title f-large d-block">Red Ribbon Club</span>
+					</div>
+				</a>
+			</div>
+		</div>
+			<div class="col-md-3 my-3">
+			<div class="element-tilt position-relative h-100">
+				<a href="#" class="club-block-view d-block p-3 box-shadow h-100">
+					<div class="accreditation-image justify-content-center d-flex pb-3">
+						<img src="https://www.svce.ac.in/wp-content/uploads/2019/09/yoth_red_cross_svce.png" alt="Image Source" />
+					</div>
+					<div class="club-content text-center">
+						<span class="club-title f-large d-block">Youth Red Cross</span>
+					</div>
+				</a>
+			</div>
+		</div>
+			<div class="col-md-3 my-3">
+			<div class="element-tilt position-relative h-100">
+				<a href="#" class="club-block-view d-block p-3 box-shadow h-100">
+					<div class="accreditation-image justify-content-center d-flex pb-3">
+						<img src="https://www.svce.ac.in/wp-content/uploads/2019/09/Grievance-Redressal-Cell_svce.png" alt="Image Source" />
+					</div>
+					<div class="club-content text-center">
+						<span class="club-title f-large d-block">Grievance Redressal Cell</span>
+					</div>
+				</a>
+			</div>
+		</div>
+			<div class="col-md-3 my-3">
+			<div class="element-tilt position-relative h-100">
+				<a href="#" class="club-block-view d-block p-3 box-shadow h-100">
+					<div class="accreditation-image justify-content-center d-flex pb-3">
+						<img src="https://yt3.googleusercontent.com/MIVTOAdt72vCjYMPLZGqp1UuHHK1E4w-Z9ViQORLxbQTpgl6w65aDyTLN7FCWRFbzvpISykGmQ=s900-c-k-c0x00ffffff-no-rj" alt="Image Source"/>
+					</div>
+					<div class="club-content text-center">
+						<span class="club-title f-large d-block">Code Club</span>
+					</div>
+				</a>
+			</div>
+		</div>
+			<div class="col-md-3 my-3">
+			<div class="element-tilt position-relative h-100">
+				<a href="#" class="club-block-view d-block p-3 box-shadow h-100">
+					<div class="accreditation-image justify-content-center d-flex pb-3">
+						<img src="https://www.svce.ac.in/wp-content/uploads/2019/09/womens_logo_svce.jpg" alt="Image Source" />
+					</div>
+					<div class="club-content text-center">
+						<span class="club-title f-large d-block">Women Empowerment Cell</span>
+					</div>
+				</a>
+			</div>
+		</div>
+			<div class="col-md-3 my-3">
+			<div class="element-tilt position-relative h-100">
+				<a href="#" class="club-block-view d-block p-3 box-shadow h-100">
+					<div class="accreditation-image justify-content-center d-flex pb-3">
+						<img src="https://www.svce.ac.in/wp-content/uploads/2019/09/careeco-logo.jpg" alt="Image Source" />
+					</div>
+					<div class="club-content text-center">
+						<span class="club-title f-large d-block">CARE &#8211; Eco Club</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	                </div>
+                <div class="d-flex flex-wrap w-100 pt-5 load-more-block">
+                    <a href="#"
+                    class="btn bg-lightblue text-uppercase text-white border-radius-4 px-5
+                    py-2 align-center d-flex">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+.img-icons {
+    border-radius: 50%;
+    background-color: #f90;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+}
+.img-icons:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fff;  
+    border-radius: 50%;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    -moz-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+    z-index: 9;
+}
+@keyframes pulse-border {
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        opacity: 0;
+    }
+}
+</style>
+
+	</main>
+	<footer class="site-footer">
+		<div class="footer-top bg-lightblue section text-white">
+			<div class="container">
+				<div class="row">
+					
+
+<div class="col-md-5 details-block pb-4 pb-md-0">
+    <section id="custom_html-8" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><style>  
+div.img {  
+  width:320px;  
+	filter: brightness(100);  
+    }  
+</style>
+<section id="custom_html-2" class="widget_text widget widget_custom_html">
+<div class="textwidget custom-html-widget">
+<div class="footer-logo">			
+<a class="m-0" href="#">
+<div>
+	<img src="./logo.jpg" alt="KEC"/>
+	</div></a>
+</div><p>
+	
+	<p>
+		
+	</p><h4>
+								<a href="#">Admission | </a> 
+								<a href="#"> Academics | </a>
+								<a href="#">Placement </a>
+	</h4></p>
+			
+	</div>
+</section>
+<p>For Management Quota Counseling :<br><br>
+	CONTACT : <br>
+        044-2447 1224, 044-2447 1012<br><br>Mr. Hari Vignesh - 89501 14562 <br>Mr. Jeswin Pool Dany - 96325 41235 <br><br>
+	Email: admissionenquiry@kec.ac.in</p>
+<br>
+<div class="row">
+<div class="row no-gutters">
+<div class="col-6">
+</div>
+</div>
+</div>
+
+</div></section></div>
+<div class="col-md-4 contactus-block pb-4 pb-md-0">
+    <section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><span class="f-large border-bottom-style-after">Contact Us</span>
+
+<ul class="d-block">
+
+	<li class="footer-title">Campus Address</li>
+
+	<li class="pl-4 position-relative">
+		<i class="icon-map-marker position-absolute left-0 pt-1"></i>
+		Krishna Engineering College<br>
+		No.38, Priya Nagar<br>
+		Chennai - Ponnamalle Road<br>
+		Porur, Chennai - 600 118<br>
+		Tamil Nadu, India
+	</li>
+
+	<li class="footer-title trust-ofc">Trust Office Address:</li>
+	<li class="pl-4 position-relative">
+		<i class="icon-map-marker position-absolute left-0 pt-1"></i>
+		Krishna Educational and Health Trust<br/>
+		No.1/3A High view Road<br/>
+		Sector 3, Broadway<br/>
+		Chennai, Tamil Nadu 600085
+	</li>
+
+	<li class="pl-4 position-relative py-3">
+		<i class="icon-envelope position-absolute left-0 pt-1"></i>
+		<a href="mailto:principal@kec.edu.in">principal@kec.edu.in</a><br>
+		<a href="mailto:enquiry@kec.edu.in">enquiry@kec.edu.in</a>
+	</li>
+	<li class="pl-4 position-relative">
+		<i class="icon-phone position-absolute left-0 pt-1"></i><a href="tel:+91-44-27152000">+91-44-24471568</a>
+	</li>
+
+</ul></div></section></div>
+<div class="col-md-3 quicklink-block pb-4 pb-md-0">
+    <section id="custom_html-4" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><span class="f-large border-bottom-style-after">Quick Links</span>
+        <ul class="d-block">
+					<a href="#" target="_blank" rel="noopener noreferrer">Library</a>
+        
+					
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Anti - Ragging Committee</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Disability Resource Centre</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#Prevention_ragging">Prevention of Ragging</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Mandatory Disclosure</a></li>
+					<li><a href="#" target="_blank" rel="noopener noreferrer">Undertaking for AICTE</a></li>
+					<li><a href="#" target="_blank" rel="noopener noreferrer">Undertaking for UGC</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">FAQ on Management Scholarships</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Financial Statement</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">DOTE-Fixation Committee</a></li>
+					<li><a href="#">Krishna Temple</a></li>
+<li>
+<a href="#" title="online verification">Online Verification</a>
+</li>
+				<li>	
+				<a href="#" rel="Home">
+				Bus schedule</a></li>
+					
+					
+						<a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">Staff Mail</a>
+					<li>	
+				<a href="#" target="_new" rel="noopener noreferrer">
+				Service Rule</a></li>
+				<li>	
+				<a href="#" target="_new" rel="noopener noreferrer">
+				ISO Documents</a></li>	
+        </ul>
+</div></section></div>
+<div class="modal" tabindex="-1" id="Financial" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content w-100 h-100">
+      <div class="modal-header">
+        <h5 class="modal-title text-black">Financial Statement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="Newsletter_one" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content w-100 h-100">
+      <div class="modal-header">
+        <h5 class="modal-title text-black">KEC News Letter - Book 2018</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="Newsletter_two" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content w-100 h-100">
+      <div class="modal-header">
+        <h5 class="modal-title text-black">KEC News Letter - Book 2017</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="Prevention_ragging" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content w-100 h-100">
+      <div class="modal-header">
+        <h5 class="modal-title text-black">Prevention of Ragging</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom bg-lightblue text-white py-3">
+			<div class="container">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="row">
+		<div class="col-md-6 copyright xs-text-center pb-3 pb-sm-0 pb-md-0">
+			<span class="f-medium">Copyright 2024 @ Krishna Engineering College</span>
+		</div>
+		<div class="col-md-6 social-icons">
+			<div class="d-flex justify-content-center">
+				<a class="icon-round" href="#" target="_blank" rel="noopener noreferrer"><i class="icon-facebook"></i></a>
+				<a class="icon-round" href="#" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a>
+				<a class="icon-round" href="#" target="_blank" rel="noopener noreferrer"><i class="icon-linkedin"></i></a>
+				<a class="icon-round" href="#" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"></i></a>
+				<a class="icon-round" href="#" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"></i></a>	
+			</div>
+			<div class="row no-gutters">
+<div class="col-5">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
